@@ -2,4 +2,5 @@ FROM maven
 WORKDIR /app
 COPY . .
 RUN mvn package
+EXPOSE 8080:8080
 CMD [ "java", "-cp", "target/SpringBootTest-1.0-SNAPSHOT-jar-with-dependencies.jar", "org.meleschkin.Application" ]
