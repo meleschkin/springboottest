@@ -1,7 +1,6 @@
 package org.meleschkin;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import lombok.extern.log4j.Log4j2;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,8 +19,8 @@ import static org.mockito.Mockito.when;
 @SuppressWarnings("ALL")
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
+@Log4j2
 public class MyTest {
-    Log LOG = LogFactory.getLog(MyTest.class);
 
     @Autowired
     TestRestTemplate restTemplate;
@@ -40,7 +39,7 @@ public class MyTest {
     @Test
     public void myTest() {
         ResponseEntity<String> result = restTemplate.getForEntity("/", String.class);
-        LOG.info(result.getBody());
+        log.info(result.getBody());
         if (result.getBody() == null)
             fail();
         assertTrue(result.getBody().contains("Spring Boot Training - Hello World"));
@@ -49,7 +48,7 @@ public class MyTest {
     @Test
     public void controler() {
         String result = controler.index();
-        LOG.info(result);
+        log.info(result);
         assertNotNull(result);
     }
 
