@@ -9,7 +9,7 @@ public class HelloWorldSpringApplicationContextInitializer implements Applicatio
 
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
-        log.info("Hello World Application Initalizeation: Initialize the application context");
+        log.info("Hello World Application Initialization: Initialize the application context");
 
     }
 

@@ -12,7 +12,7 @@ public class HelloWorldSpringApplicationEventListener implements ApplicationList
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
-        log.info("Hello World Application Initalizeation: Receive Initalizeation Message " + event.toString());
+        log.info("Hello World Application Initialization: Receive Initialization Message " + event.toString());
     }
 
 }
