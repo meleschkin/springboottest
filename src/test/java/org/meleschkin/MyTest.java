@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @ExtendWith(SpringExtension.class)
 @Log4j2
-public class MyTest {
+class MyTest {
 
     @Autowired
     TestRestTemplate restTemplate;
@@ -37,7 +37,7 @@ public class MyTest {
     }
 
     @Test
-    public void myTest() {
+    void myTest() {
         ResponseEntity<String> result = restTemplate.getForEntity("/", String.class);
         log.info(result.getBody());
         if (result.getBody() == null)
@@ -46,7 +46,7 @@ public class MyTest {
     }
 
     @Test
-    public void controler() {
+    void controler() {
         String result = controler.index();
         log.info(result);
         assertNotNull(result);

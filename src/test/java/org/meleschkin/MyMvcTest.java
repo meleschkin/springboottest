@@ -15,14 +15,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest
 @ExtendWith(SpringExtension.class)
-public class MyMvcTest {
+class MyMvcTest {
 
     @SuppressWarnings("unused")
     @Autowired
     MockMvc mockMvc;
 
     @Test
-    public void myTest() throws Exception {
+    void myTest() throws Exception {
         mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Spring Boot Training - Hello World")));
     }
