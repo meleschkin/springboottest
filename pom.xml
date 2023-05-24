@@ -15,12 +15,12 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <commons-lang3.version>3.12.0</commons-lang3.version>
-        <junit.version>5.9.3</junit.version>
+        <junit.version>5.10.0-M1</junit.version>
         <hamcrest.version>2.2</hamcrest.version>
         <log4j-core.version>2.20.0</log4j-core.version>
         <log4j-api.version>2.20.0</log4j-api.version>
         <lombok.version>1.18.26</lombok.version>
-        <spring-boot-dependencies.version>3.0.6</spring-boot-dependencies.version>
+        <spring-boot-dependencies.version>3.1.0</spring-boot-dependencies.version>
     </properties>
 
     <dependencyManagement>
