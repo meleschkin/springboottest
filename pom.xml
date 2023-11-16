@@ -15,12 +15,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <commons-lang3.version>3.13.0</commons-lang3.version>
-        <junit.version>5.10.0</junit.version>
+        <junit.version>5.10.1</junit.version>
         <hamcrest.version>2.2</hamcrest.version>
         <log4j-core.version>3.0.0-alpha1</log4j-core.version>
         <log4j-api.version>3.0.0-alpha1</log4j-api.version>
         <lombok.version>1.18.30</lombok.version>
         <spring-boot-dependencies.version>3.1.5</spring-boot-dependencies.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
     </properties>
 
     <dependencyManagement>
@@ -96,7 +97,7 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>2.2</version>
+            <version>${snakeyaml.version}</version>
         </dependency>
     </dependencies>
     <build>
