@@ -22,6 +22,7 @@
         <lombok.version>1.18.30</lombok.version>
         <spring-boot-dependencies.version>3.2.2</spring-boot-dependencies.version>
         <snakeyaml.version>2.2</snakeyaml.version>
+        <json.path>2.9.0</json.path>
     </properties>
 
     <dependencyManagement>
@@ -98,6 +99,11 @@
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
             <version>${snakeyaml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json.path}</version>
         </dependency>
     </dependencies>
     <build>
