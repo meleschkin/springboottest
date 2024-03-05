@@ -15,12 +15,12 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <commons-lang3.version>3.14.0</commons-lang3.version>
-        <junit.version>5.10.1</junit.version>
+        <junit.version>5.10.2</junit.version>
         <hamcrest.version>2.2</hamcrest.version>
-        <log4j-core.version>3.0.0-alpha1</log4j-core.version>
-        <log4j-api.version>3.0.0-alpha1</log4j-api.version>
+        <log4j-core.version>3.0.0-beta2</log4j-core.version>
+        <log4j-api.version>3.0.0-beta2</log4j-api.version>
         <lombok.version>1.18.30</lombok.version>
-        <spring-boot-dependencies.version>3.2.2</spring-boot-dependencies.version>
+        <spring-boot-dependencies.version>3.2.3</spring-boot-dependencies.version>
         <snakeyaml.version>2.2</snakeyaml.version>
         <json.path>2.9.0</json.path>
     </properties>
@@ -116,17 +116,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
