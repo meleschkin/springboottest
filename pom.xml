@@ -19,8 +19,8 @@
         <hamcrest.version>2.2</hamcrest.version>
         <log4j-core.version>3.0.0-beta2</log4j-core.version>
         <log4j-api.version>3.0.0-beta2</log4j-api.version>
-        <lombok.version>1.18.30</lombok.version>
-        <spring-boot-dependencies.version>3.2.3</spring-boot-dependencies.version>
+        <lombok.version>1.18.32</lombok.version>
+        <spring-boot-dependencies.version>3.2.4</spring-boot-dependencies.version>
         <snakeyaml.version>2.2</snakeyaml.version>
         <json.path>2.9.0</json.path>
     </properties>
@@ -120,7 +120,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.7.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
